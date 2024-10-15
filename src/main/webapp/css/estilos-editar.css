@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Ancho del contenedor */
+}
+
+.form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre grupos de formulario */
+}
+
+.form-label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 90%; 
+    padding: 8px; /* Padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    margin: 0 auto; 
+    display: block; 
+}
+
+.form-input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 8px; 
+    background-color: #007BFF; /* Azul */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 1em; /* Tamaño de fuente consistente */
+    box-sizing: border-box; /* Asegura que padding no afecte el tamaño */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.button-container {
+    margin: 5px; 
+    padding: 5px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Centrar los botones */
+}
+
+.link-button {
+    display: inline-block; /* Para que tome las propiedades de bloque */
+    text-align: center; /* Centrar el texto */
+    width: 100%; /* Asegura que el botón tenga el mismo ancho */
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* Ocultar inicialmente */
+}
+
+.mensaje-error {
+    background-color: #f8d7da; /* Fondo rojo claro */
+    color: #721c24; /* Color del texto rojo oscuro */
+    border: 1px solid #f5c6cb; /* Borde rojo suave */
+    padding: 10px; /* Espacio interno */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 0.9em; /* Tamaño de fuente */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 15px; /* Espacio debajo del mensaje */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    animation: fadeIn 0.5s ease-in-out; /* Animación de entrada */
+    display: block; /* Mostrar el mensaje */
+}
+.mensaje-error i {
+    font-size: 2em; /* Ajusta el tamaño del ícono */
+    vertical-align: middle; /* Alinear verticalmente */
+    margin-right: 5px; /* Espacio a la derecha del ícono */
+}
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
